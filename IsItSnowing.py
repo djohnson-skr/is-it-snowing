@@ -43,7 +43,7 @@ if snowing():
     windSpeed = round(info['daily'][0]['wind_speed'] * 3.6, 1)  # converting from m/s to kph and round to 1 decimal
     date = date.today()
 
-    yag = yagmail.SMTP('yaweatherboi@gmail.com', 'email password')  # Start a connection
+    yag = yagmail.SMTP('<eamil address>, '<email password>')  # Start a connection
     receivers = ['<enter email passwords>']  # Recipients of the email
     body = '<h1>Welcome to Ultimate Weather!</h1>' \
            'Thank you for subscribing to your personalized weather reports by the hour provided by' \
